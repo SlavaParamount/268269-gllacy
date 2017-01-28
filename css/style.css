@@ -1,0 +1,144 @@
+.main-nav li{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  display: inline-block;
+  outline: 2px solid yellow;
+}
+
+.menubuttons{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.infotime{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.infophone{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  line-height: 60.35px;
+}
+
+.gift h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.gift p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.hit h2{
+  font-size: 45px;
+}
+
+.hit a, .advantages p, .latestblog h4, .subscribe label, .item a{
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #323232;
+}
+
+.advantages p, .latestblog h4 {
+  color: #323232;
+}
+
+.latestblog h4{
+  font-weight: 500;
+}
+
+.latestblog a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #323232;
+}
+
+.subscribe label{
+  color: #5a5a5a;
+}
+
+.map p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.adresstext{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.footerlinks{
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.footerlinks :first-child {
+  font-weight: bold;
+}
+
+.academy{
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.breadcrumbs{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.formheader{
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+form, .turn-page{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+form label{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
