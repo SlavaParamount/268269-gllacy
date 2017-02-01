@@ -56,26 +56,26 @@
         </arcticle>
       </section>
       <section class="icecream-hits">
-        <article class="item hit">
-            <img src="" alt="">
-            <span>310Р/кг</span>
-            <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-          </article>
-          <article class="item hit">
-            <img src="" alt="">
-            <span>380Р/кг</span>
-            <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-          </article>
-          <article class="item hit">
-            <img src="" alt="">
-            <span>380Р/кг</span>
-            <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-          </article>
-          <article class="item hit">
-            <img src="" alt="">
-            <span>415Р/кг</span>
-            <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
-          </article>
+        <div class="hit">
+          <img src="img/hit1.png" alt="">
+          <h2>310Р/кг</h2>
+          <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        </div>
+        <div class="hit">
+          <img src="img/hit2.png" alt="">
+          <h2>380Р/кг</h2>
+          <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+        </div>
+        <div class="hit">
+          <img src="img/hit3.png" alt="">
+          <h2>380Р/кг</h2>
+          <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        </div>
+        <div class="hit">
+          <img srcimg/hit4.png alt="">
+          <h2>415Р/кг</h2>
+          <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+        </div>
       </section>
       <section class="advantages">
         <h1>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
@@ -121,22 +121,22 @@
       </section>
     </main>
     <footer>
-      <div class="socialbuttons">
+      <section class="socialbuttons">
         <a href="#">T</a>
         <a href="#">I</a>
         <a href="#">F</a>
         <a href="#">В</a>
-      </div>
-      <div class="footerlinks">
+      </section>
+      <section class="footerlinks">
         <a href="#">Для поставщиков</a>
         <a href="#">наши документы</a>
         <a href="#">О производстве</a>
         <a href="#">Экологические стандарты</a>
-      </div>
-      <div class="academy">
+      </section>
+      <section class="academy">
         <img src="" alt="Академия HTML">
         <p>Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> (c)2017</p>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
