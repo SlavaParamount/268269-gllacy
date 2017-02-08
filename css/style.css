@@ -15,6 +15,18 @@
   font-weight: 500;
   color: white;
   margin-top: 8px;
+  outline: 2px solid green;
+  margin-left: 880px;
+  width: 293px;
+  box-sizing: border-box;
+  padding-left: 31px;
+  padding-top: 15px;
+  position: absolute;
+}
+
+.header-contacts{
+  text-align: right;
+  margin-top: -5px;
 }
 
 .infotime{
@@ -172,10 +184,6 @@ header{
 }
 
 body, html{
-  width: 1200px;
-  min-height: 2416px;
-  margin: 0;
-  padding: 0;
   background: #849d8f;
 }
 
@@ -189,32 +197,10 @@ body, html{
   box-sizing: border-box;
 }
 
-.header-right{
-  outline: 2px solid green;
-  margin-right: 27px;
-  width: 293px;
-  float: right;
-  box-sizing: border-box;
-  padding-left: 31px;
-  padding-top: 15px;
-}
-
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
-}
-
-.contact-info{
-  width: 100%;
-  outline: 2px solid red;
-  float: right;
-  margin: 0;
-  padding: 0;
-  color: white;
-  margin-top: -20px;
-  text-align: right;
-  margin-bottom: 254px;
 }
 
 main{
@@ -239,7 +225,7 @@ main{
   box-sizing: border-box;
 }
 
-.hit{
+.item{
   outline: 2px solid cyan;
   min-height: 334px;
   width: 267px;
@@ -323,6 +309,9 @@ footer{
 
 .container{
   outline: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
 }
 
 .icecream{
@@ -506,4 +495,8 @@ main{
   float: right;
   margin-top: 23px;
   margin-bottom: 5px; 
+}
+
+.header-contacts{
+  position: relative;
 }
