@@ -16,7 +16,7 @@
   color: white;
   margin-top: 8px;
   outline: 2px solid green;
-  margin-left: 880px;
+  margin-left: 855px;
   width: 293px;
   box-sizing: border-box;
   padding-left: 31px;
@@ -101,22 +101,43 @@ h2{
   margin-top: -10px;
 }
 
+.socialbuttons a{
+  display: block;
+  outline: 2px solid cyan;
+  height: 32px;
+  width: 32px;
+  background-color: gray;
+}
+
 .rightcolumn{
   outline: 2px solid green;
   float: right;
-  width: 540px;
+  width: 550px;
   margin-top: -10px;
+}
+
+.leftcolumn .first, .leftcolumn .second{
+  box-sizing: border-box;
+  padding-left: 13px;
 }
 
 .first, .second{
   outline: 2px solid red;
-  width: 472px;
+  width: 485px;
   float: right;
+}
+
+.leftcolumn{
+  background: url(../img/seo1.png) no-repeat 0px 3px,
+              url(../img/seo2.png) no-repeat 0px 91px;
+}
+.rightcolumn{
+  background: url(../img/seo3.png) no-repeat 10px 3px,
+              url(../img/seo4.png) no-repeat 10px 91px;
 }
 
 .second{
   margin-top: -10px;
-  
 }
 
 .slider-button a{
@@ -127,7 +148,7 @@ h2{
   font-weight: 800;
 }
 
-.gift a, .subscribe button{
+.gift a, .subscribe button, .feedback-btn{
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -156,17 +177,19 @@ h2{
   color: #5a5a5a;
 }
 
-.map p{
+.adresstext{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-top: -12px;
+}
+
+.adressinfo-regular{
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 20px;
-}
-
-.adresstext{
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: bold;
+  font-weight: regular;
 }
 
 .footerlinks{
@@ -223,7 +246,7 @@ body, html{
 .header-left{
   height: 100%;
   width: 560px;
-  margin-left: 17px;
+  margin-left: -10px;
   padding-top: 8px;
   outline: yellow solid 2px;
   float: left;
@@ -355,7 +378,7 @@ main{
 
 .subscribe-input input{
   border-radius: 4px;
-  border: 1px solid gray;
+  border: 1px solid #d3d3d2;
   height: 40px;
   width: 362px;
 }
@@ -605,6 +628,34 @@ main{
   position: relative;
 }
 
-.map{
-  
+.adressinfo{
+  outline: 2px solid yellow;
+  width: 302px;
+  float: right;
+  background-color: white;
+  margin-top: 65px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 10px 23px;
+}
+
+.feedback-btn{
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  border-radius: 26px;
+  border: none;
+  padding: 10px 28px;
+  margin-top: 13px;
+  margin-bottom: 20px;
+}
+
+.secondblock{
+  margin-top: 10px;
+}
+
+.lastline{
+  margin-top: -15px;
 }
