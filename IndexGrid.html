@@ -49,20 +49,33 @@
       </div>
     </header>
     <main class="container">
-      <section class="slider clearfix">
-        <div class="slider-header">
-          <h2>Крем-брюле и пломбир  с малиновым джемом</h2>
+      <input type="radio" id="btn-1" name="toggle" checked>
+      <input type="radio" id="btn-2" name="toggle">
+      <input type="radio" id="btn-3" name="toggle">
+      <div class="site-wrapper">
+        <div class="content-wrapper">
+          <header class="wrapper-header"></header>
+          <div class="slider">
+            <div class="slide" id="slide1">
+              <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
+              <a class="slide-btn" href="#">Давайте оба!</a>
+            </div>
+            <div class="slide" id="slide2">
+              <div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+              <a class="slide-btn" href="#">Давайте оба!</a>
+            </div>
+            <div class="slide" id="slide3">
+              <div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
+              <a class="slide-btn" href="#">Давайте оба!</a>
+            </div>
+            <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+            </div>
+          </div>
         </div>
-        <div class="switch-slide">
-        </div>
-        <div class="slider-button clearfix">
-        <a href="">
-          Давайте оба!
-        </a>
-        </div>
-        <a href="">
-        </a>
-      </section>
+      </div>
       <section class="gift clearfix"> 
         <article class="left-gift">
           <h3>Малинка даром!</h3>
@@ -152,7 +165,7 @@
         </div>
       </section>
     </main>
-    <footer class="container">
+    <footer class="container clearfix">
       <div class="socialbuttons">
         <a href="#" class="twitter"><img href="img/twit.png"></a>
         <a href="#" class="inst"></a>
@@ -160,13 +173,17 @@
         <a href="#" class="vk"></a>
       </div>
       <div class="footerlinks">
-        <a href="#">Для поставщиков</a>
-        <a href="#">наши документы</a>
-        <a href="#">О производстве</a>
-        <a href="#">Экологические стандарты</a>
+        <div class="footerlinks-left">
+          <p><a href="#" class="deliever">Для поставщиков</a></p>
+          <p><a href="#">О производстве</a></p>
+        </div>
+        <div class="footerlinks-right">
+          <p><a href="#">Наши документы</a></p>
+          <p><a href="#">Экологические стандарты</a></p>
+        </div>
       </div>
       <div class="academy">
-        <img src="" alt="Академия HTML">
+        <img src="../img/academylogo.png" alt="Академия HTML">
         <p>Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> (c)2017</p>
       </div>
     </footer>

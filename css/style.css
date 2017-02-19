@@ -101,12 +101,23 @@ h2{
   margin-top: -10px;
 }
 
+.socialbuttons{
+  outline: 2px solid red;
+  box-sizing: border-box;
+  padding-top: 39px;
+  width: 267px;
+  float: left;
+  margin-right: 26px;
+}
+
 .socialbuttons a{
-  display: block;
+  display:inline-block;
+  vertical-align: middle;
   outline: 2px solid cyan;
   height: 32px;
   width: 32px;
   background-color: gray;
+  margin-right: 15px;
 }
 
 .rightcolumn{
@@ -125,19 +136,51 @@ h2{
   outline: 2px solid red;
   width: 485px;
   float: right;
+  position: relative;
 }
 
-.leftcolumn{
-  background: url(../img/seo1.png) no-repeat 0px 3px,
-              url(../img/seo2.png) no-repeat 0px 91px;
-}
-.rightcolumn{
-  background: url(../img/seo3.png) no-repeat 10px 3px,
-              url(../img/seo4.png) no-repeat 10px 91px;
+.second p{
+  margin-top: 5px;
 }
 
-.second{
-  margin-top: -10px;
+.leftcolumn .first:before{
+  content: '';
+  position: absolute;
+  left: -45px;
+  top: 3px;
+  width: 49px;
+  height: 49px;
+  background: url(../img/seo1.png);
+}
+
+.leftcolumn .second:before{
+  content: '';
+  position: absolute;
+  left: -45px;
+  top: -7px;
+  width: 49px;
+  height: 49px;
+  background: url(../img/seo2.png);
+}
+
+.rightcolumn .first:before{
+  content: '';
+  position: absolute;
+  left: -55px;
+  top: 3px;
+  width: 49px;
+  height: 49px;
+  background: url(../img/seo3.png);
+}
+
+.rightcolumn .second:before{
+  content: '';
+  position: absolute;
+  left: -55px;
+  top: -7px;
+  width: 49px;
+  height: 49px;
+  background: url(../img/seo4.png);
 }
 
 .slider-button a{
@@ -198,20 +241,21 @@ h2{
   line-height: 18px;
 }
 
-.footerlinks :first-child {
-  font-weight: bold;
-}
-
 .academy{
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   line-height: 18px;
 }
 
-.breadcrumbs{
+.breadcrumbs a{
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 16px;
+  color: white;
+}
+
+.breadcrumbs span{
+  color: white;
 }
 
 .formheader{
@@ -264,18 +308,6 @@ main{
   padding-left: 27px;
 }
 
-.slider{
-  box-sizing: border-box;
-  min-height: 533px; 
-  outline: 2px solid green;
-  box-sizing: border-box;
-  padding-top: 266px;
-  padding-left: 237px;
-  padding-right:237px;
-}
-
-
-
 .icecream-hits{
   outline: 2px solid yellow;
   margin-top: 36px;
@@ -289,6 +321,7 @@ main{
   width: 267px;
   float: left;
   margin-right: 26px;
+  margin-bottom: 14px;
 }
 
 .item img{
@@ -306,7 +339,7 @@ main{
   margin-top: 9px;
 }
 
-.hit:last-child{
+.item:nth-child(4n){
   margin: 0;
 }
 
@@ -318,6 +351,12 @@ main{
   border-radius: 16px;
   box-sizing: border-box;
   padding: 8px 20px;
+}
+
+.advantages:after{
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .newsblock{
@@ -387,33 +426,20 @@ main{
   margin-top: 40px;
   min-height: 430px;
   outline: 2px solid #fe124b;
+  background: url(../img/map.jpg) no-repeat;
 }
 
 footer{
   margin: 0px 27px;
 }
 
-.socialbuttons{
-  outline: 2px solid red;
-  min-height: 104px;
-  width: 267px;
-  float: left;
-  margin-right: 26px;
-}
+
 
 .footerlinks{
   outline: 2px solid red;
-  min-height: 104px;
   width: 560px;
   float: left;
-  margin-right: 26px;
-}
-
-.academy{
-  outline: 2px solid red;
-  min-height: 104px;
-  width: 267px;
-  float: left;
+  margin-right: 10px;
 }
 
 .breadcrumbs{
@@ -441,7 +467,7 @@ footer{
 }
 
 .icecream{
-  margin-top: 30px;
+  margin-top: 27px;
   outline: 2px solid red;
   min-height: 1056px;
 }
@@ -532,49 +558,135 @@ footer{
   margin-right: 9px;
 }
 
-.silder-header{
-  display: block;
-  width: 60%;
+.site-wrapper{
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: "Roboto", "Arial", sans-serif;
+  background-color: #849d8f;
+  background-image: url("../img/morojenko.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+  margin-top: 10px;
+}
+
+.content-wrapper {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.wrapper-header {
+  height: 100px; /* для демо */
+  background-color: rgba(0, 0, 0, 0.4); /* для демо */
+  box-shadow: inset 0 0 0 4px #000000; /* для демо */
+}
+
+.slider {
+  position: relative;
+  padding-top: 270px;
   text-align: center;
-  margin-left: 229px;
+  color: #ffffff;
 }
 
-main{
-  background: url(../img/morojenko.png) no-repeat;
-  background-position: center 5px;
+.slide-title {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: -62px;
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 60.35px;
 }
 
-.switch-slide{
-  float: left;
-  min-height: 20px;
-  margin-right: 432px;
-}
-
-.slider-button{
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-  width: 280px;
-  float: left;
-  margin-top: -40px;
-  padding-bottom: 10px;
-  border-radius: 32px;
-  overflow: hidden;
-  padding-top: 9px;
-  margin-left: 195px;
-}
-
-.slider-button a{
-  color: white;
-  text-decoration: none;
+.slide-btn {
   display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  padding: 12px 50px;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
+
+.slide-btn:hover {
+  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slide-btn:active {
+  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  vertical-align: top;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 25px;
+  left: -115px;
+  z-index: 20;
+  font-size: 0;
+  float: left;
+}
+
+.container > input[type="radio"] {
+  display: none;
+}
+
+.slide {
+  display: none;
+}
+
+#btn-1:checked ~ .site-wrapper #slide1,
+#btn-2:checked ~ .site-wrapper #slide2,
+#btn-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+
+#btn-1:checked ~ .site-wrapper label[for="btn-1"],
+#btn-2:checked ~ .site-wrapper label[for="btn-2"],
+#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+  background-color: #ffffff;
+}
+
+#btn-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/morojenko.png");
+}
+
+#btn-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/morojenko2.png");
+}
+
+#btn-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/morojenko3.png");
+}
+
 
 .left-gift{
   background: url(../img/malina.jpg) no-repeat;
@@ -659,3 +771,69 @@ main{
 .lastline{
   margin-top: -15px;
 }
+
+.footerlinks{
+  box-sizing: border-box;
+  padding-top: 21px;
+   padding-left: 130px;
+}
+
+.footerlinks a{
+  color: white;
+  margin-bottom: -10px;
+}
+
+.deliever{
+  font-weight: bold;
+}
+
+.footerlinks-left{
+  float: left;
+}
+
+.footerlinks-right{
+  margin-left: 30px;
+  float: left;
+}
+
+.footerlinks-right p:last-child, .footerlinks-left p:last-child{
+  margin-top: -10px;
+}
+
+.deliever{
+  position: relative;
+}
+
+.deliever:before{
+  content: '';
+  position: absolute;
+  left: -23px;
+  top: 3px;
+  width: 15px;
+  height: 13px;
+  background: url("../img/heart.png");
+}
+
+.academy{
+  box-sizing: border-box;
+  padding-top: 19px;
+  padding-left: 90px;
+  outline: 2px solid red;
+  width: 283px;
+  float: left;
+}
+
+.academy img{
+  margin-left: 5px;
+}
+
+.academy p{
+  margin-top: -2px;
+  color: white;
+}
+
+.academy a{
+  color: white;
+}
+
+
